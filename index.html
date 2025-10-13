@@ -54,6 +54,27 @@
       padding: 1rem 0;
       margin-top: 2rem;
     }
+
+    /* --- قسم النبذة عني --- */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .about-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border: 4px solid #0077b6;
+    }
+    .about-container div {
+      flex: 1;
+    }
+
+    /* --- تنسيق الكتب --- */
     .book {
       background-color: #f0f8ff;
       padding: 15px;
@@ -78,17 +99,22 @@
     .btn-download:hover {
       background-color: #005f94;
     }
+
+    /* --- تواصل معي --- */
+    .contact-icons {
+      text-align: center;
+    }
     .contact-icons a {
       display: inline-block;
-      margin-right: 10px;
+      margin: 0 10px;
       transition: transform 0.2s;
     }
     .contact-icons a:hover {
       transform: scale(1.1);
     }
     .contact-icons img {
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
     }
   </style>
 </head>
@@ -104,31 +130,38 @@
     <a href="#contact">تواصل معي</a>
   </nav>
 
+  <!-- قسم النبذة عني -->
   <section id="home">
     <h2>نبذة عني</h2>
-    <p>منتسب لدى وزارة الصحة العراقية 🇮🇶</p>
-    <p>- بكلوريوس التقنية الطبية - قسم البصريات ❤️</p>
-    <p>- مدير ملتقى اخصائي البصريات @Opt_ics 💙</p>
-    <p>- مدير قناة البحوث @Younis_Optometry (تحتوي على 8000 مصدر للعين البشرية)</p>
+    <div class="about-container">
+      <img src="photo_2025-10-13_03-12-19.jpg" alt="Younis Optometrist">
+      <div>
+        <p>منتسب لدى وزارة الصحة العراقية 🇮🇶</p>
+        <p>- بكلوريوس التقنية الطبية - قسم البصريات ❤️</p>
+        <p>- مدير ملتقى اخصائي البصريات <b>@Opt_ics</b> 💙</p>
+        <p>- مدير قناة البحوث <b>@Younis_Optometry</b> (تحتوي على أكثر من 8000 مصدر للعين البشرية)</p>
+      </div>
+    </div>
   </section>
 
+  <!-- قسم الكتب -->
   <section id="books">
     <h2>الكتب</h2>
-
     <div class="book">
       <h3>📘 أسس الصحة النفسية</h3>
       <a class="btn-download" 
          href="https://drive.google.com/uc?export=download&id=1SINZyUSNdmCXTOmpctTpoWhVk5aP_rMh"
          target="_blank">📥 تحميل الكتاب</a>
     </div>
-
   </section>
 
+  <!-- قسم المقالات -->
   <section id="articles">
     <h2>المقالات</h2>
     <p>يمكنك كتابة المقالات والمعلومات العلمية هنا 🧠</p>
   </section>
 
+  <!-- قسم التواصل -->
   <section id="contact">
     <h2>تواصل معي</h2>
     <div class="contact-icons">
